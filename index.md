@@ -35,6 +35,10 @@ I hold a master’s degree in Human Resource Management from Trinity College Dub
 
 <ul style="font-size: 1.1em; color: #222;">
   <li>
+    We’re introducing fine-tuning and exogenous covariate support for Toto, enabling teams to adapt the model to their own data and incorporate known future signals to produce more accurate time-series forecasts.
+  </li>
+
+  <li>
     We unveiled the first two launches (open source under the Apache 2.0 license) from Datadog AI Research! 
     <a href="https://huggingface.co/Datadog/Toto-Open-Base-1.0" target="_blank">Toto</a>, a new SOTA (by a wide margin!) time series foundation model, and 
     <a href="https://huggingface.co/datasets/Datadog/BOOM" target="_blank">BOOM</a>, the largest benchmark of observability metrics.

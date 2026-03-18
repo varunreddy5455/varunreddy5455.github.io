@@ -3,26 +3,44 @@ layout: default
 title: Varun Reddy
 ---
 
-# Hey, I'm Varun 👋
+# Hey, I’m Varun Reddy 👋
 
 <style>
+  .page-header {
+    display: none;
+  }
+
+  body {
+    background: #ffffff;
+    color: #111111;
+  }
+
+  .main-content {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 2.75rem 2rem 4rem;
+    background: #ffffff;
+    color: #111111;
+  }
+
   .ai-profile {
-    background: linear-gradient(180deg, #0d1117 0%, #111827 100%);
-    color: #dbe7ff;
-    border: 1px solid #2b3550;
-    border-radius: 16px;
-    padding: 24px;
-    margin-top: 18px;
+    background: transparent;
+    color: #111111;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 20px;
     font-family: "IBM Plex Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    box-shadow: 0 12px 30px rgba(6, 12, 26, 0.4);
+    box-shadow: none;
   }
 
   .ai-profile a {
-    color: #7cc8ff;
+    color: #111111;
+    text-decoration: underline;
   }
 
   .ai-profile a:hover {
-    color: #a3ddff;
+    color: #333333;
   }
 
   .profile-header {
@@ -38,7 +56,7 @@ title: Varun Reddy
     object-fit: cover;
     width: 140px;
     height: 140px;
-    border: 2px solid #58a6ff;
+    border: 1px solid #111111;
   }
 
   .profile-text {
@@ -65,29 +83,29 @@ title: Varun Reddy
 
   .section-tabs {
     display: flex;
-    gap: 10px;
+    gap: 14px;
     flex-wrap: wrap;
-    margin: 2px 0 20px;
+    margin: 8px 0 32px;
   }
 
   .tab-button {
-    padding: 8px 14px;
-    border-radius: 8px;
-    border: 1px solid #334066;
-    background: #111b2f;
-    color: #dbe7ff;
+    padding: 9px 16px;
+    border-radius: 6px;
+    border: 1px solid #111111;
+    background: #ffffff;
+    color: #111111;
     cursor: pointer;
     font: inherit;
   }
 
   .tab-button:hover {
-    border-color: #58a6ff;
+    background: #f3f3f3;
   }
 
   .tab-button.active {
-    background: #0f2a4a;
-    border-color: #7cc8ff;
-    color: #ecf6ff;
+    background: #111111;
+    border-color: #111111;
+    color: #ffffff;
   }
 
   .tab-panel {
@@ -100,25 +118,25 @@ title: Varun Reddy
 
   .ai-profile h2 {
     font-size: 1.28em;
-    color: #e8f1ff;
-    margin: 22px 0 12px;
-    border-left: 3px solid #58a6ff;
-    padding-left: 10px;
+    color: #111111;
+    margin: 36px 0 16px;
+    border-left: 2px solid #111111;
+    padding-left: 12px;
   }
 
   .ai-profile ul {
-    margin: 0;
-    padding-left: 20px;
-    line-height: 1.6;
+    margin: 0 0 10px;
+    padding-left: 22px;
+    line-height: 1.8;
   }
 
   .ai-profile li {
-    margin-bottom: 8px;
+    margin-bottom: 14px;
   }
 
   .entry {
-    margin-bottom: 16px;
-    line-height: 1.6;
+    margin-bottom: 30px;
+    line-height: 1.9;
   }
 </style>
 

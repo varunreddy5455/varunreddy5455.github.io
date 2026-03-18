@@ -4,8 +4,6 @@ title: Varun Reddy
 ---
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-
   .page-header {
     display: none;
   }
@@ -17,7 +15,7 @@ title: Varun Reddy
   body {
     background: linear-gradient(180deg, #f4f5f7 0%, #eceff3 52%, #e8ebf0 100%);
     color: #111111;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   .top-bar {
@@ -97,13 +95,13 @@ title: Varun Reddy
 
   .section-block {
     scroll-margin-top: 96px;
-    padding: 34px 0 26px;
+    padding: 48px 0 36px;
   }
 
   .section-block + .section-block {
-    margin-top: 58px;
-    border-top: 1px solid rgba(17, 17, 17, 0.18);
-    padding-top: 64px;
+    margin-top: 92px;
+    border-top: 2px solid rgba(17, 17, 17, 0.22);
+    padding-top: 86px;
   }
 
   .section-title {
@@ -126,7 +124,7 @@ title: Varun Reddy
     object-fit: cover;
     width: 140px;
     height: 140px;
-    border: 1px solid #111111;
+    border: none;
   }
 
   .profile-text {
@@ -145,7 +143,7 @@ title: Varun Reddy
   }
 
   .bio {
-    margin: 0 0 18px;
+    margin: 0 0 24px;
     line-height: 1.9;
     max-width: 860px;
   }
@@ -157,23 +155,23 @@ title: Varun Reddy
 
   .subheading {
     font-size: 1.1rem;
-    margin: 36px 0 16px;
+    margin: 48px 0 20px;
     font-weight: 600;
   }
 
   .ai-profile ul {
-    margin: 0;
+    margin: 0 0 8px;
     padding-left: 22px;
-    line-height: 1.9;
+    line-height: 2;
   }
 
   .ai-profile li {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   .entry {
-    margin: 0 0 36px;
-    line-height: 1.95;
+    margin: 0 0 46px;
+    line-height: 2;
   }
 
   @media (max-width: 860px) {
@@ -196,8 +194,8 @@ title: Varun Reddy
     }
 
     .section-block + .section-block {
-      margin-top: 44px;
-      padding-top: 52px;
+      margin-top: 64px;
+      padding-top: 64px;
     }
   }
 </style>

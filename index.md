@@ -18,6 +18,11 @@ title: Varun Reddy
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
+  body,
+  body * {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
   .top-bar {
     position: fixed;
     top: 0;
@@ -95,13 +100,13 @@ title: Varun Reddy
 
   .section-block {
     scroll-margin-top: 96px;
-    padding: 48px 0 36px;
+    padding: 64px 0 52px;
   }
 
   .section-block + .section-block {
-    margin-top: 92px;
-    border-top: 2px solid rgba(17, 17, 17, 0.22);
-    padding-top: 86px;
+    margin-top: 124px;
+    border-top: 2px solid rgba(17, 17, 17, 0.24);
+    padding-top: 110px;
   }
 
   .section-title {
@@ -116,7 +121,7 @@ title: Varun Reddy
     align-items: center;
     gap: 28px;
     flex-wrap: wrap;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
   }
 
   .profile-image {
@@ -143,7 +148,7 @@ title: Varun Reddy
   }
 
   .bio {
-    margin: 0 0 24px;
+    margin: 0 0 30px;
     line-height: 1.9;
     max-width: 860px;
   }
@@ -155,23 +160,23 @@ title: Varun Reddy
 
   .subheading {
     font-size: 1.1rem;
-    margin: 48px 0 20px;
+    margin: 62px 0 26px;
     font-weight: 600;
   }
 
   .ai-profile ul {
-    margin: 0 0 8px;
+    margin: 0 0 12px;
     padding-left: 22px;
-    line-height: 2;
+    line-height: 2.05;
   }
 
   .ai-profile li {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
   }
 
   .entry {
-    margin: 0 0 46px;
-    line-height: 2;
+    margin: 0 0 62px;
+    line-height: 2.05;
   }
 
   @media (max-width: 860px) {
@@ -194,8 +199,8 @@ title: Varun Reddy
     }
 
     .section-block + .section-block {
-      margin-top: 64px;
-      padding-top: 64px;
+      margin-top: 86px;
+      padding-top: 82px;
     }
   }
 </style>

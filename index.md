@@ -227,7 +227,7 @@ title: Varun Reddy
           <a href="https://www.youtube.com/watch?v=7T7SyMZihwo" target="_blank">Datadog</a>
         </p>
         <p class="tagline">
-          Sourcing exceptional <strong>AI Research</strong>, and <strong>Applied AI</strong> talent in the US and EMEA for Datadog.
+          Sourcing exceptional <strong>AI Research</strong>, and <strong>Applied AI</strong> talent in Paris and New York for Datadog.
         </p>
       </div>
     </div>
@@ -281,7 +281,8 @@ title: Varun Reddy
     <h2 class="section-title">Experience</h2>
 
     <p class="entry"><strong>Datadog</strong><br>
-    Technical Sourcer II (AI and Security) <em>(Apr 2024 – Present)</em></p>
+    Senior Technical Sourcer (AI Research and Applied AI) <em>(Apr 2026 – Present)</em><br>
+    Technical Sourcer II (AI Research and Applied AI) <em>(Apr 2024 – April 2026)</em></p>
 
     <p class="entry"><strong>Azon Recruitment Group</strong><br>
     Principal IT Recruitment Consultant <em>(Sep 2022 – Apr 2024)</em><br>

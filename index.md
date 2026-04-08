@@ -101,6 +101,14 @@ title: Varun Reddy
   .section-block {
     scroll-margin-top: 96px;
     padding: 64px 0 52px;
+    display: none;
+  }
+
+  .section-block.active {
+    display: block;
+    margin-top: 0;
+    border-top: none;
+    padding-top: 64px;
   }
 
   .section-block + .section-block {
@@ -250,7 +258,7 @@ title: Varun Reddy
 </header>
 
 <div class="ai-profile">
-  <section id="about-section" class="section-block" aria-label="About">
+  <section id="about-section" class="section-block active" aria-label="About">
     <h2 class="section-title">About</h2>
 
     <div class="profile-header">
@@ -405,39 +413,18 @@ title: Varun Reddy
       links.forEach(function (link) {
         link.classList.toggle("active", link.getAttribute("data-section") === id);
       });
+      sections.forEach(function (section) {
+        section.classList.toggle("active", section.id === id);
+      });
     }
 
     links.forEach(function (link) {
       link.addEventListener("click", function (event) {
         event.preventDefault();
         var targetId = link.getAttribute("data-section");
-        var target = document.getElementById(targetId);
-        if (!target) return;
         setActive(targetId);
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
       });
     });
-
-    if ("IntersectionObserver" in window) {
-      var observer = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              setActive(entry.target.id);
-            }
-          });
-        },
-        {
-          root: null,
-          rootMargin: "-40% 0px -45% 0px",
-          threshold: 0,
-        }
-      );
-
-      sections.forEach(function (section) {
-        observer.observe(section);
-      });
-    }
 
     setActive("about-section");
   })();

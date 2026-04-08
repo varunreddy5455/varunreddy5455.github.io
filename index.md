@@ -179,6 +179,40 @@ title: Varun Reddy
     line-height: 2.05;
   }
 
+  .roles-list {
+    display: grid;
+    gap: 18px;
+    margin-top: 10px;
+  }
+
+  .role-card {
+    border: 1px solid rgba(17, 17, 17, 0.2);
+    border-radius: 12px;
+    padding: 18px 20px;
+    background: rgba(255, 255, 255, 0.72);
+  }
+
+  .role-card-title {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .role-card-title a {
+    text-decoration: none;
+  }
+
+  .role-card-title a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .role-location {
+    margin: 0;
+    color: #2c2c2c;
+    line-height: 1.65;
+  }
+
   @media (max-width: 860px) {
     .top-bar {
       padding: 10px 12px;
@@ -211,6 +245,7 @@ title: Varun Reddy
     <a class="top-link active" href="#about-section" data-section="about-section">About</a>
     <a class="top-link" href="#experience-section" data-section="experience-section">Experience</a>
     <a class="top-link" href="#education-section" data-section="education-section">Education &amp; Awards</a>
+    <a class="top-link" href="#roles-section" data-section="roles-section">Open AI roles at Datadog</a>
   </nav>
 </header>
 
@@ -323,6 +358,37 @@ title: Varun Reddy
 
     <p class="entry"><strong>Karnataka State Level 7th Rank</strong><br>
     Issued by 2nd International Level Science Talent Search Examination – Aug 2007</p>
+  </section>
+
+  <section id="roles-section" class="section-block" aria-label="Open AI roles at Datadog">
+    <h2 class="section-title">Open AI roles at Datadog</h2>
+
+    <div class="roles-list">
+      <div class="role-card">
+        <p class="role-card-title"><strong><a href="https://careers.datadoghq.com/detail/6652564/?gh_jid=6652564" target="_blank">AI Research Scientist – Datadog AI Research (DAIR)</a></strong></p>
+        <p class="role-location">Paris, France</p>
+      </div>
+
+      <div class="role-card">
+        <p class="role-card-title"><strong><a href="https://careers.datadoghq.com/detail/7194969/?gh_jid=7194969" target="_blank">AI Research Engineer - Datadog AI Research (DAIR)</a></strong></p>
+        <p class="role-location">Paris, France</p>
+      </div>
+
+      <div class="role-card">
+        <p class="role-card-title"><strong><a href="https://careers.datadoghq.com/detail/6572669/?gh_jid=6572669" target="_blank">AI Research Scientist – Datadog AI Research (DAIR)</a></strong></p>
+        <p class="role-location">New York, New York, USA</p>
+      </div>
+
+      <div class="role-card">
+        <p class="role-card-title"><strong><a href="https://careers.datadoghq.com/detail/7183013/?gh_jid=7183013" target="_blank">AI Research Engineer – Datadog AI Research (DAIR)</a></strong></p>
+        <p class="role-location">New York, New York, USA</p>
+      </div>
+
+      <div class="role-card">
+        <p class="role-card-title"><strong><a href="https://careers.datadoghq.com/detail/6781197/?gh_jid=6781197" target="_blank">Senior Applied Scientist</a></strong></p>
+        <p class="role-location">Paris, France</p>
+      </div>
+    </div>
   </section>
 </div>
 

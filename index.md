@@ -3,133 +3,52 @@ layout: default
 title: Varun Reddy
 ---
 
+# Hey, I’m Varun Reddy 👋
+
 <style>
   .page-header {
     display: none;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
-    background: linear-gradient(180deg, #f4f5f7 0%, #eceff3 52%, #e8ebf0 100%);
-    color: #111111;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-
-  body,
-  body * {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-
-  .top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 12px 18px;
-    background: linear-gradient(135deg, #171a20 0%, #262d37 100%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(8px);
-  }
-
-  .brand {
-    color: #111111;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 999px;
-    padding: 8px 14px;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-    white-space: nowrap;
-  }
-
-  .top-nav {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-
-  .top-link {
-    text-decoration: none;
-    color: #f2f5fb;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 999px;
-    padding: 7px 13px;
-    font-size: 0.92rem;
-    transition: all 120ms ease;
-  }
-
-  .top-link:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
-
-  .top-link.active {
-    color: #111111;
     background: #ffffff;
-    border-color: #ffffff;
+    color: #111111;
   }
 
   .main-content {
-    max-width: 960px;
+    max-width: 920px;
     margin: 0 auto;
-    padding: 110px 28px 72px;
+    padding: 2.75rem 2rem 4rem;
+    background: #ffffff;
+    color: #111111;
   }
 
   .ai-profile {
+    background: transparent;
     color: #111111;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-family: "IBM Plex Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    box-shadow: none;
   }
 
   .ai-profile a {
     color: #111111;
     text-decoration: underline;
-    text-underline-offset: 2px;
   }
 
   .ai-profile a:hover {
-    color: #2c2c2c;
-  }
-
-  .section-block {
-    scroll-margin-top: 96px;
-    padding: 64px 0 52px;
-    display: none;
-  }
-
-  .section-block.active {
-    display: block;
-    margin-top: 0;
-    border-top: none;
-    padding-top: 64px;
-  }
-
-  .section-block + .section-block {
-    margin-top: 124px;
-    border-top: 2px solid rgba(17, 17, 17, 0.24);
-    padding-top: 110px;
-  }
-
-  .section-title {
-    margin: 0 0 22px;
-    font-size: 1.42rem;
-    font-weight: 600;
-    letter-spacing: -0.01em;
+    color: #333333;
   }
 
   .profile-header {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 24px;
     flex-wrap: wrap;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
   }
 
   .profile-image {
@@ -137,137 +56,111 @@ title: Varun Reddy
     object-fit: cover;
     width: 140px;
     height: 140px;
-    border: none;
+    border: 1px solid #111111;
   }
 
   .profile-text {
-    max-width: 680px;
+    max-width: 650px;
   }
 
   .role {
     margin: 0;
-    font-size: 1.06rem;
-    font-weight: 600;
+    font-size: 1.05em;
   }
 
   .tagline {
-    margin: 10px 0 0;
-    line-height: 1.8;
+    margin: 8px 0 0;
   }
 
   .bio {
-    margin: 0 0 30px;
-    line-height: 1.9;
-    max-width: 860px;
-  }
-
-  .contact {
-    margin: 0;
-    line-height: 1.8;
-  }
-
-  .subheading {
-    font-size: 1.1rem;
-    margin: 62px 0 26px;
-    font-weight: 600;
-  }
-
-  .ai-profile ul {
-    margin: 0 0 12px;
-    padding-left: 22px;
-    line-height: 2.05;
-  }
-
-  .ai-profile li {
-    margin-bottom: 26px;
-  }
-
-  .entry {
-    margin: 0 0 62px;
-    line-height: 2.05;
-  }
-
-  .roles-list {
-    display: grid;
-    gap: 18px;
-    margin-top: 10px;
-  }
-
-  .role-card {
-    border: 1px solid rgba(17, 17, 17, 0.2);
-    border-radius: 12px;
-    padding: 18px 20px;
-    background: rgba(255, 255, 255, 0.72);
-  }
-
-  .role-card-title {
-    margin: 0 0 8px;
-    font-size: 1rem;
-    line-height: 1.55;
-  }
-
-  .role-card-title a {
-    text-decoration: none;
-  }
-
-  .role-card-title a:hover {
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-
-  .role-location {
-    margin: 0;
-    color: #2c2c2c;
+    margin: 14px 0;
     line-height: 1.65;
   }
 
-  @media (max-width: 860px) {
-    .top-bar {
-      padding: 10px 12px;
-    }
+  .contact {
+    margin: 0 0 14px;
+  }
 
-    .brand {
-      padding: 7px 11px;
-      font-size: 0.92rem;
-    }
+  .section-tabs {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin: 8px 0 32px;
+  }
 
-    .top-link {
-      font-size: 0.86rem;
-      padding: 6px 10px;
-    }
+  .tab-button {
+    padding: 9px 16px;
+    border-radius: 6px;
+    border: 1px solid #111111;
+    background: #ffffff;
+    color: #111111;
+    cursor: pointer;
+    font: inherit;
+  }
 
-    .main-content {
-      padding: 124px 16px 56px;
-    }
+  .tab-button:hover {
+    background: #f3f3f3;
+  }
 
-    .section-block + .section-block {
-      margin-top: 86px;
-      padding-top: 82px;
-    }
+  .tab-button.active {
+    background: #111111;
+    border-color: #111111;
+    color: #ffffff;
+  }
+
+  .tab-panel {
+    display: none;
+  }
+
+  .tab-panel.active {
+    display: block;
+  }
+
+  .ai-profile h2 {
+    font-size: 1.28em;
+    color: #111111;
+    margin: 36px 0 16px;
+    border-left: 2px solid #111111;
+    padding-left: 12px;
+  }
+
+  .ai-profile ul {
+    margin: 0 0 10px;
+    padding-left: 22px;
+    line-height: 1.8;
+  }
+
+  .ai-profile li {
+    margin-bottom: 14px;
+  }
+
+  .entry {
+    margin-bottom: 30px;
+    line-height: 1.9;
   }
 </style>
 
-<header class="top-bar" aria-label="Primary navigation">
-  <div class="brand">Varun Reddy</div>
-  <nav class="top-nav">
-    <a class="top-link active" href="#about-section" data-section="about-section">About</a>
-    <a class="top-link" href="#experience-section" data-section="experience-section">Experience</a>
-    <a class="top-link" href="#education-section" data-section="education-section">Education &amp; Awards</a>
-    <a class="top-link" href="#roles-section" data-section="roles-section">Open AI roles at Datadog</a>
-  </nav>
-</header>
-
 <div class="ai-profile">
-  <section id="about-section" class="section-block active" aria-label="About">
-    <h2 class="section-title">About</h2>
+  <div class="section-tabs" role="tablist" aria-label="Profile sections">
+    <button id="tab-about" class="tab-button active" type="button" role="tab" aria-selected="true" aria-controls="about-section" data-tab-target="about-section">
+      About
+    </button>
+    <button id="tab-experience" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="experience-section" data-tab-target="experience-section">
+      Experience
+    </button>
+    <button id="tab-education" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="education-section" data-tab-target="education-section">
+      Education &amp; Awards
+    </button>
+  </div>
 
+  <section id="about-section" class="tab-panel active" role="tabpanel" aria-labelledby="tab-about">
     <div class="profile-header">
       <img src="profile.jpg" alt="Varun Reddy" class="profile-image" />
 
       <div class="profile-text">
         <p class="role">
-          Technical Sourcer @
-          <a href="https://www.youtube.com/watch?v=7T7SyMZihwo" target="_blank">Datadog</a>
+          <strong>Technical Sourcer @
+          <a href="https://www.youtube.com/watch?v=7T7SyMZihwo" target="_blank">Datadog</a></strong>
         </p>
         <p class="tagline">
           Sourcing exceptional <strong>AI Research</strong>, and <strong>Applied AI</strong> talent in Paris and New York for Datadog.
@@ -284,24 +177,28 @@ title: Varun Reddy
       <a href="https://www.linkedin.com/in/varun-m-r/" target="_blank">LinkedIn</a>
     </p>
 
-    <h3 class="subheading">Latest News</h3>
+    <h2>Latest News</h2>
     <ul>
       <li>
         We’re introducing fine-tuning and exogenous covariate support for Toto, enabling teams to adapt the model to their own data and incorporate known future signals to produce more accurate time-series forecasts.
       </li>
+
       <li>
         We unveiled the first two launches (open source under the Apache 2.0 license) from Datadog AI Research!
         <a href="https://huggingface.co/Datadog/Toto-Open-Base-1.0" target="_blank">Toto</a>, a new SOTA (by a wide margin!) time series foundation model, and
         <a href="https://huggingface.co/datasets/Datadog/BOOM" target="_blank">BOOM</a>, the largest benchmark of observability metrics.
       </li>
+
       <li>
         We are expanding our AI Research team in Paris! Check out our open
         <a href="https://careers.datadoghq.com/detail/6652564/?gh_jid=6652564" target="_blank">AI Researcher role</a>.
       </li>
+
       <li>
         <a href="https://www.datadoghq.com/blog/datadog-time-series-foundation-model/" target="_blank">Introducing Toto</a>:
         A state-of-the-art time series foundation model by Datadog.
       </li>
+
       <li>
         Want to work on exciting topics like
         <a href="https://www.datadoghq.com/blog/watchdog/" target="_blank">anomaly detection</a>,
@@ -313,15 +210,15 @@ title: Varun Reddy
       </li>
     </ul>
 
-    <h3 class="subheading">Fun facts</h3>
+    <h2>Fun facts</h2>
     <ul>
       <li>I'm a trained Carnatic classical singer.</li>
       <li>I ran a YouTube channel called <a href="https://www.youtube.com/@AllAboutPlanning" target="_blank">All About Planning</a> where I shared content related to urban planning.</li>
     </ul>
   </section>
 
-  <section id="experience-section" class="section-block" aria-label="Experience">
-    <h2 class="section-title">Experience</h2>
+  <section id="experience-section" class="tab-panel" role="tabpanel" aria-labelledby="tab-experience">
+    <h2>Experience</h2>
 
     <p class="entry"><strong>Datadog</strong><br>
     Senior Technical Sourcer (AI Research and Applied AI) <em>(Apr 2026 – Present)</em><br>
@@ -339,17 +236,17 @@ title: Varun Reddy
     Recruitment Consultant <em>(Aug 2019 – Nov 2019)</em></p>
   </section>
 
-  <section id="education-section" class="section-block" aria-label="Education and awards">
-    <h2 class="section-title">Education &amp; Awards</h2>
+  <section id="education-section" class="tab-panel" role="tabpanel" aria-labelledby="tab-education">
+    <h2>Education</h2>
 
-    <h3 class="subheading">Education</h3>
     <p class="entry"><strong>Trinity College Dublin</strong><br>
     Master's Degree, Human Resource Management <em>(2018 – 2019)</em></p>
 
     <p class="entry"><strong>School of Planning and Architecture, Bhopal</strong><br>
     Bachelor's Degree, Urban Planning <em>(2014 – 2018)</em></p>
 
-    <h3 class="subheading">Honors and Awards</h3>
+    <h2>Honors and Awards</h2>
+
     <p class="entry"><strong>Proficiency Gold Medal for 1st Rank in B. Plan</strong><br>
     Issued by School of Planning and Architecture, Bhopal – Oct 2018</p>
 
@@ -367,66 +264,33 @@ title: Varun Reddy
     <p class="entry"><strong>Karnataka State Level 7th Rank</strong><br>
     Issued by 2nd International Level Science Talent Search Examination – Aug 2007</p>
   </section>
-
-  <section id="roles-section" class="section-block" aria-label="Open AI roles at Datadog">
-    <h2 class="section-title">Open AI roles at Datadog</h2>
-
-    <div class="roles-list">
-      <div class="role-card">
-        <p class="role-card-title"><strong><a href="https://careers.datadoghq.com/detail/6652564/?gh_jid=6652564" target="_blank">AI Research Scientist – Datadog AI Research (DAIR)</a></strong></p>
-        <p class="role-location">Paris, France</p>
-      </div>
-
-      <div class="role-card">
-        <p class="role-card-title"><strong><a href="https://careers.datadoghq.com/detail/7194969/?gh_jid=7194969" target="_blank">AI Research Engineer - Datadog AI Research (DAIR)</a></strong></p>
-        <p class="role-location">Paris, France</p>
-      </div>
-
-      <div class="role-card">
-        <p class="role-card-title"><strong><a href="https://careers.datadoghq.com/detail/6572669/?gh_jid=6572669" target="_blank">AI Research Scientist – Datadog AI Research (DAIR)</a></strong></p>
-        <p class="role-location">New York, New York, USA</p>
-      </div>
-
-      <div class="role-card">
-        <p class="role-card-title"><strong><a href="https://careers.datadoghq.com/detail/7183013/?gh_jid=7183013" target="_blank">AI Research Engineer – Datadog AI Research (DAIR)</a></strong></p>
-        <p class="role-location">New York, New York, USA</p>
-      </div>
-
-      <div class="role-card">
-        <p class="role-card-title"><strong><a href="https://careers.datadoghq.com/detail/6781197/?gh_jid=6781197" target="_blank">Senior Applied Scientist</a></strong></p>
-        <p class="role-location">Paris, France</p>
-      </div>
-    </div>
-  </section>
 </div>
 
 <script>
   (function () {
-    var links = Array.prototype.slice.call(document.querySelectorAll(".top-link"));
-    var sections = links
-      .map(function (link) {
-        return document.getElementById(link.getAttribute("data-section"));
-      })
-      .filter(Boolean);
+    var tabButtons = document.querySelectorAll(".tab-button");
+    var tabPanels = document.querySelectorAll(".tab-panel");
 
-    function setActive(id) {
-      links.forEach(function (link) {
-        link.classList.toggle("active", link.getAttribute("data-section") === id);
+    function setActiveTab(targetId) {
+      tabButtons.forEach(function (button) {
+        var isActive = button.getAttribute("data-tab-target") === targetId;
+        button.classList.toggle("active", isActive);
+        button.setAttribute("aria-selected", String(isActive));
       });
-      sections.forEach(function (section) {
-        section.classList.toggle("active", section.id === id);
+
+      tabPanels.forEach(function (panel) {
+        var isActive = panel.id === targetId;
+        panel.classList.toggle("active", isActive);
       });
     }
 
-    links.forEach(function (link) {
-      link.addEventListener("click", function (event) {
-        event.preventDefault();
-        var targetId = link.getAttribute("data-section");
-        setActive(targetId);
+    tabButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        setActiveTab(button.getAttribute("data-tab-target"));
       });
     });
 
-    setActive("about-section");
+    setActiveTab("about-section");
   })();
 </script>
 

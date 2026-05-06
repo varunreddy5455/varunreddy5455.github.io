@@ -266,7 +266,7 @@ title: Varun Reddy
 
       <div class="profile-text">
         <p class="role">
-          Technical Sourcer @
+          Senior Technical Sourcer @
           <a href="https://www.youtube.com/watch?v=7T7SyMZihwo" target="_blank">Datadog</a>
         </p>
         <p class="tagline">

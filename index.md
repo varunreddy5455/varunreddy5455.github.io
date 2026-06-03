@@ -180,11 +180,15 @@ title: Varun Reddy
     <h2>Latest News</h2>
     <ul>
       <li>
-        We’re introducing fine-tuning and exogenous covariate support for Toto, enabling teams to adapt the model to their own data and incorporate known future signals to produce more accurate time-series forecasts.
+        [May 2026] We released Toto 2.0, a family of open-weights time series forecasting models that proves scaling works, with bigger models consistently performing better all the way up to 2.5B parameters.
+      <li>
+        
+      <li>
+        [Feb 2026] We’re introducing fine-tuning and exogenous covariate support for Toto, enabling teams to adapt the model to their own data and incorporate known future signals to produce more accurate time-series forecasts.
       </li>
 
       <li>
-        We unveiled the first two launches (open source under the Apache 2.0 license) from Datadog AI Research!
+        [May 2025] We unveiled the first two launches (open source under the Apache 2.0 license) from Datadog AI Research!
         <a href="https://huggingface.co/Datadog/Toto-Open-Base-1.0" target="_blank">Toto</a>, a new SOTA (by a wide margin!) time series foundation model, and
         <a href="https://huggingface.co/datasets/Datadog/BOOM" target="_blank">BOOM</a>, the largest benchmark of observability metrics.
       </li>

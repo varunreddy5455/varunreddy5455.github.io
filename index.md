@@ -6,41 +6,125 @@ title: Varun Reddy
 # Hey, I’m Varun Reddy 👋
 
 <style>
+  :root {
+    --bg-0: #f5f5f7;
+    --label: #1d1d1f;
+    --secondary: rgba(29, 29, 31, 0.64);
+    --tertiary: rgba(29, 29, 31, 0.42);
+    --fill: rgba(118, 118, 128, 0.12);
+    --stroke: rgba(0, 0, 0, 0.08);
+    --stroke-strong: rgba(0, 0, 0, 0.14);
+    --glass: rgba(255, 255, 255, 0.72);
+    --link: #0071e3;
+    --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 12px;
+  }
+
+  #skip-to-content {
+    color: var(--label);
+  }
+
   .page-header {
     display: none;
   }
 
+  html {
+    color-scheme: light;
+    background: var(--bg-0);
+  }
+
+  html,
   body {
-    background: #ffffff;
-    color: #111111;
+    min-height: 100%;
+    background-color: var(--bg-0) !important;
+    background-image:
+      radial-gradient(ellipse 110% 62% at 50% -8%, rgba(186, 214, 255, 0.55), transparent 56%),
+      radial-gradient(ellipse 48% 38% at 92% 22%, rgba(255, 196, 214, 0.32), transparent 52%),
+      radial-gradient(ellipse 46% 34% at 6% 82%, rgba(186, 232, 214, 0.34), transparent 50%),
+      linear-gradient(180deg, #fbfbfd 0%, #f5f5f7 38%, #eef1f6 72%, #f5f5f7 100%) !important;
+    color: var(--label) !important;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body::before {
+    content: "";
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.85), transparent 38%);
+    mask-image: linear-gradient(180deg, #000 0%, transparent 55%);
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 55%);
+    z-index: 0;
   }
 
   .main-content {
-    max-width: 920px;
+    position: relative;
+    z-index: 1;
+    max-width: 840px;
     margin: 0 auto;
-    padding: 2.75rem 2rem 4rem;
-    background: #ffffff;
-    color: #111111;
+    padding: 4.5rem 1.5rem 5rem;
+    background: transparent !important;
+    color: var(--label) !important;
+    font-size: 17px;
+    line-height: 1.47;
+    letter-spacing: -0.022em;
+  }
+
+  .main-content h1,
+  .main-content h2,
+  .main-content h3,
+  .main-content h4,
+  .main-content h5,
+  .main-content h6 {
+    color: var(--label) !important;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+  }
+
+  .main-content > h1 {
+    margin: 0 0 1.75rem;
+    font-size: clamp(40px, 7vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -0.042em;
+    text-align: left;
+  }
+
+  .main-content a {
+    color: var(--link);
+    text-decoration: none;
+  }
+
+  .main-content a:hover {
+    text-decoration: underline;
+  }
+
+  .site-footer {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid var(--stroke);
+    color: var(--tertiary) !important;
+    font-size: 13px;
+  }
+
+  .site-footer-owner,
+  .site-footer-credits,
+  .site-footer a {
+    color: var(--tertiary) !important;
   }
 
   .ai-profile {
     background: transparent;
-    color: #111111;
+    color: var(--label);
     border: none;
     border-radius: 0;
     padding: 0;
-    margin-top: 20px;
-    font-family: "IBM Plex Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    margin-top: 8px;
+    font-family: inherit;
     box-shadow: none;
-  }
-
-  .ai-profile a {
-    color: #111111;
-    text-decoration: underline;
-  }
-
-  .ai-profile a:hover {
-    color: #333333;
   }
 
   .profile-header {
@@ -48,7 +132,7 @@ title: Varun Reddy
     align-items: center;
     gap: 24px;
     flex-wrap: wrap;
-    margin-bottom: 14px;
+    margin-bottom: 18px;
   }
 
   .profile-image {
@@ -56,7 +140,8 @@ title: Varun Reddy
     object-fit: cover;
     width: 140px;
     height: 140px;
-    border: 1px solid #111111;
+    border: 1px solid var(--stroke-strong);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
   }
 
   .profile-text {
@@ -65,47 +150,62 @@ title: Varun Reddy
 
   .role {
     margin: 0;
-    font-size: 1.05em;
+    font-size: 1.12em;
+    letter-spacing: -0.02em;
+    color: var(--label);
   }
 
   .tagline {
     margin: 8px 0 0;
+    color: var(--secondary);
   }
 
   .bio {
-    margin: 14px 0;
-    line-height: 1.65;
+    margin: 16px 0;
+    line-height: 1.55;
+    color: var(--secondary);
   }
 
   .contact {
-    margin: 0 0 14px;
+    margin: 0 0 8px;
+    color: var(--secondary);
   }
 
   .section-tabs {
     display: flex;
-    gap: 14px;
+    width: fit-content;
+    max-width: 100%;
+    gap: 4px;
     flex-wrap: wrap;
-    margin: 8px 0 32px;
+    margin: 0 0 28px;
+    padding: 4px;
+    background: var(--fill);
+    border: 1px solid var(--stroke);
+    border-radius: 14px;
   }
 
   .tab-button {
-    padding: 9px 16px;
-    border-radius: 6px;
-    border: 1px solid #111111;
-    background: #ffffff;
-    color: #111111;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 0;
+    background: transparent;
+    color: var(--label);
     cursor: pointer;
     font: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.016em;
+    transition: background 0.16s ease, box-shadow 0.16s ease, color 0.16s ease;
   }
 
   .tab-button:hover {
-    background: #f3f3f3;
+    background: rgba(255, 255, 255, 0.55);
   }
 
   .tab-button.active {
-    background: #111111;
-    border-color: #111111;
-    color: #ffffff;
+    background: #ffffff;
+    color: var(--label);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 8px 18px rgba(15, 23, 42, 0.08);
   }
 
   .tab-panel {
@@ -117,26 +217,138 @@ title: Varun Reddy
   }
 
   .ai-profile h2 {
-    font-size: 1.28em;
-    color: #111111;
+    font-size: 21px;
+    color: var(--label);
     margin: 36px 0 16px;
-    border-left: 2px solid #111111;
-    padding-left: 12px;
+    border-left: 0;
+    padding-left: 0;
+    letter-spacing: -0.03em;
+  }
+
+  .ai-profile h2:first-child {
+    margin-top: 8px;
   }
 
   .ai-profile ul {
+    list-style: none;
     margin: 0 0 10px;
-    padding-left: 22px;
-    line-height: 1.8;
+    padding: 0;
+    background: var(--glass);
+    backdrop-filter: saturate(180%) blur(28px);
+    -webkit-backdrop-filter: saturate(180%) blur(28px);
+    border: 1px solid var(--stroke);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
   }
 
   .ai-profile li {
-    margin-bottom: 14px;
+    margin: 0;
+    padding: 16px 20px;
+    line-height: 1.55;
+    color: var(--label);
+    border-bottom: 1px solid var(--stroke);
+  }
+
+  .ai-profile li:last-child {
+    border-bottom: 0;
   }
 
   .entry {
-    margin-bottom: 30px;
-    line-height: 1.9;
+    margin-bottom: 14px;
+    line-height: 1.55;
+    padding: 18px 20px;
+    background: var(--glass);
+    backdrop-filter: saturate(180%) blur(28px);
+    -webkit-backdrop-filter: saturate(180%) blur(28px);
+    border: 1px solid var(--stroke);
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+    color: var(--secondary);
+  }
+
+  .entry strong {
+    color: var(--label);
+    font-weight: 600;
+  }
+
+  .project-card {
+    background: var(--glass);
+    backdrop-filter: saturate(180%) blur(28px);
+    -webkit-backdrop-filter: saturate(180%) blur(28px);
+    border: 1px solid var(--stroke);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    margin: 8px 0 0;
+    box-shadow: var(--shadow);
+  }
+
+  .project-card .eyebrow {
+    margin: 0 0 10px;
+    color: var(--tertiary);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .project-card h3 {
+    margin: 0 0 12px;
+    font-size: 28px;
+    letter-spacing: -0.035em;
+    line-height: 1.15;
+  }
+
+  .project-card h3 a {
+    color: var(--label) !important;
+  }
+
+  .project-card h3 a:hover {
+    color: var(--link) !important;
+    text-decoration: none;
+  }
+
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.016em;
+  }
+
+  .project-blurb {
+    margin: 0;
+    color: var(--secondary);
+    font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+  }
+
+  @media (max-width: 640px) {
+    .main-content {
+      padding: 2.75rem 1.15rem 4rem;
+    }
+
+    .section-tabs {
+      width: 100%;
+    }
+
+    .tab-button {
+      flex: 1 1 calc(50% - 4px);
+      text-align: center;
+    }
+
+    .project-card {
+      padding: 22px 18px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tab-button {
+      transition: none;
+    }
   }
 </style>
 
@@ -150,6 +362,9 @@ title: Varun Reddy
     </button>
     <button id="tab-education" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="education-section" data-tab-target="education-section">
       Education &amp; Awards
+    </button>
+    <button id="tab-projects" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="projects-section" data-tab-target="projects-section">
+      Projects
     </button>
   </div>
 
@@ -182,7 +397,7 @@ title: Varun Reddy
       <li>
         <strong>[May 2026]</strong> We released <a href="https://www.datadoghq.com/blog/ai/toto-2/">Toto 2.0</a>, a family of open-weights time series forecasting models that proves scaling works, with bigger models consistently performing better all the way up to 2.5B parameters.
       </li>
-        
+
       <li>
         <strong>[Feb 2026]</strong> We’re introducing <a href="https://www.datadoghq.com/blog/ai/toto-exogenous-covariates/">fine-tuning and exogenous covariate support for Toto</a>, enabling teams to adapt the model to their own data and incorporate known future signals to produce more accurate time-series forecasts.
       </li>
@@ -268,6 +483,22 @@ title: Varun Reddy
     <p class="entry"><strong>Karnataka State Level 7th Rank</strong><br>
     Issued by 2nd International Level Science Talent Search Examination – Aug 2007</p>
   </section>
+
+  <section id="projects-section" class="tab-panel" role="tabpanel" aria-labelledby="tab-projects">
+    <h2>Personal projects</h2>
+
+    <article class="project-card">
+      <p class="eyebrow">Web app</p>
+      <h3>
+        <a href="https://varunreddy5455.github.io/QuickCopy/" target="_blank" rel="noopener noreferrer">QuickCopy</a>
+      </h3>
+      <p class="project-blurb">
+        <a href="https://varunreddy5455.github.io/QuickCopy/" target="_blank" rel="noopener noreferrer">QuickCopy</a>
+        is a lightweight template manager I built to keep reusable writing in one place. You can create and customize templates, save them for later, and copy them across email, docs, and other tools so you never have to rebuild the same message on every platform.
+      </p>
+      <a class="project-link" href="https://varunreddy5455.github.io/QuickCopy/" target="_blank" rel="noopener noreferrer">Open QuickCopy ↗</a>
+    </article>
+  </section>
 </div>
 
 <script>
@@ -297,4 +528,3 @@ title: Varun Reddy
     setActiveTab("about-section");
   })();
 </script>
-

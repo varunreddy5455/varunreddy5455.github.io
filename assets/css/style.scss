@@ -1,0 +1,32 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+html {
+  color-scheme: light;
+  background: #f5f5f7;
+}
+
+body {
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.page-header {
+  display: none;
+}
+
+.main-content {
+  background: transparent;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: #1d1d1f;
+}

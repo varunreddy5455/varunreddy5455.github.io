@@ -90,6 +90,7 @@ title: Varun Reddy
     font-size: clamp(40px, 7vw, 56px);
     line-height: 1.05;
     letter-spacing: -0.042em;
+    text-align: left;
   }
 
   .main-content a {
@@ -171,7 +172,9 @@ title: Varun Reddy
   }
 
   .section-tabs {
-    display: inline-flex;
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
     gap: 4px;
     flex-wrap: wrap;
     margin: 0 0 28px;
@@ -305,6 +308,16 @@ title: Varun Reddy
     text-decoration: none;
   }
 
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.016em;
+  }
+
   .project-blurb {
     margin: 0;
     color: var(--secondary);
@@ -323,7 +336,8 @@ title: Varun Reddy
     }
 
     .tab-button {
-      flex: 1 1 auto;
+      flex: 1 1 calc(50% - 4px);
+      text-align: center;
     }
 
     .project-card {
@@ -482,6 +496,7 @@ title: Varun Reddy
         <a href="https://varunreddy5455.github.io/QuickCopy/" target="_blank" rel="noopener noreferrer">QuickCopy</a>
         is a lightweight template manager I built to keep reusable writing in one place. You can create and customize templates, save them for later, and copy them across email, docs, and other tools so you never have to rebuild the same message on every platform.
       </p>
+      <a class="project-link" href="https://varunreddy5455.github.io/QuickCopy/" target="_blank" rel="noopener noreferrer">Open QuickCopy ↗</a>
     </article>
   </section>
 </div>

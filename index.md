@@ -394,6 +394,9 @@ title: Varun Reddy
 
     <h2>Latest News</h2>
     <ul>
+     <li>
+        <strong>[Oct 2026]</strong> We released <a href="https://www.datadoghq.com/blog/ai/introducing-scout-sre-specialized-model-bits-ai/">Scout 1.0</a>, our first model specialised for investigating production issues. It’s post-trained with RL in investigation simulations built from real historical incidents, and it matches frontier models like GPT-6.1 and Claude Opus 5.5 on our internal benchmark at 3 to 8 times lower inference cost.
+      </li>
       <li>
         <strong>[May 2026]</strong> We released <a href="https://www.datadoghq.com/blog/ai/toto-2/">Toto 2.0</a>, a family of open-weights time series forecasting models that proves scaling works, with bigger models consistently performing better all the way up to 2.5B parameters.
       </li>
